@@ -1,0 +1,65 @@
+/*
+Colors used:
+Salmon: #ffa69e;
+Cream: #fffaf0;
+Light Teal: #b8f2e6;
+Light Blue: #aed9e0;
+Slate Grey: #5e6472;
+Dark Grey (text): #25282d
+*/
+body {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px; /* Sets the font size to 16px */
+  line-height: 1.6; /* Sets the line-height to 1.6 */
+  color: #25282d;
+  background-color:#fffaf0;
+}
+h1 {
+  font-family: 'Sacramento', sans-serif;
+  font-size: 44px; /*Sets the font size to 44px */
+}
+h2 {
+  font-size: 36px; /*Sets the font size to 36px */
+}
+h3 {
+  font-size: 28px; /*Sets the font size to 28px */
+}
+h4 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px; /*Sets the font size to 18px */
+  font-weight: 700; /*Sets the font weight to bold (700) */
+}
+div {
+  padding: 10px; /* Adds a 10px inner spacing to all sides*/
+  margin: 10px; /* Adds a 10px outer spacing to all sides*/
+}
+a {
+  color: #b8f2e6;
+}
+a:visited {
+  color: #aed9e0;
+}
+a:hover,
+a:focus {
+   text-decoration: none; /* No underlining when hovering over a link */
+}
+a:active {
+  color: #ffa69e;
+}
+button {
+  /* overwrite browser defaults */
+  border: none; /* reset the border */
+  font-family: inherit;
+  background-color: #ffa69e;
+  color: #25282d;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 3px;
+  border-bottom: 2px solid #e5958e; /* width of the border, type, color */
+  transition: 0.2s opacity;
+}
+button:hover,
+button:focus {
+  cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
+  opacity: 1.2; /* Increases the opactiy of the button to 120% */
+}
