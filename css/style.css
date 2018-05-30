@@ -13,13 +13,19 @@ body {
   line-height: 1.6; /* Sets the line-height to 1.6 */
   color: #25282d;
   background-color:#fffaf0;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 0 20px;
 }
 h1 {
   font-family: 'Sacramento', sans-serif;
   font-size: 44px; /*Sets the font size to 44px */
+  text-align: center;
 }
 h2 {
   font-size: 36px; /*Sets the font size to 36px */
+  text-align: center;
 }
 h3 {
   font-size: 28px; /*Sets the font size to 28px */
@@ -62,4 +68,54 @@ button:hover,
 button:focus {
   cursor: pointer; /* let's the mouse appear as hand when hovering over the button */
   opacity: 1.2; /* Increases the opactiy of the button to 120% */
+}
+* {
+  box-sizing: border-box;
+}
+.wrapper {
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto; /* No spacing to top and bottom and auto spacing to left and right */
+  padding: 0 20px;
+}
+.column {
+  width: 24%;
+  display: inline-block;
+  margin-right: 1%;
+  text-align: center;
+}
+.row {
+white-space: nowrap;
+}
+.column:last-child {
+margin-right: 0;
+}
+.navigation {
+  list-style-type: none;
+  padding: 0;
+  float: right;
+}
+.navigation > li {
+  display: inline-block;
+  margin-left: 10px;
+}
+.logo {
+  height: 100px;
+}
+@media all and (max-width: 500px) {
+  .logo {
+    height: 50px;
+  }
+  h3 {
+    font-size: 24px;
+    text-align: left;
+  }
+  .column {
+    /* Modify 4-column to 2-columns */
+    width: 49%;
+    margin-right: 1%;
+  }
+  .column:nth-child(2) {
+    margin-right: 0;
+  }
 }
